@@ -104,3 +104,5 @@ source $ZSH/oh-my-zsh.sh
 alias gs="git status"
 alias gl="git log"
 alias ..="cd .."
+alias edit="open -a 'Visual Studio Code'"
+alias srczsh="source ~/.zshrc"
