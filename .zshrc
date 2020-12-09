@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/priyal/.oh-my-zsh"
+export PATH=~/anaconda3/bin:$PATH
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,3 +107,20 @@ alias gl="git log"
 alias ..="cd .."
 alias edit="open -a 'Visual Studio Code'"
 alias srczsh="source ~/.zshrc"
+alias jp="jupyter notebook"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/priyal/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/priyal/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/priyal/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/priyal/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
