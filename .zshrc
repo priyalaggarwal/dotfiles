@@ -57,7 +57,7 @@ ZSH_THEME="example"
 # stamp shown in the history command output.
 # You can set one of the optional three formats:
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
+# or set a custom format using the strftime function format specifications, 
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
@@ -73,6 +73,9 @@ plugins=(
   git
   zsh-autosuggestions
 )
+
+# to avoid insecure completion-dependent directories detected message
+ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
